@@ -10094,4 +10094,7 @@
     <string name="quick_unlock_title">Quick unlock</string>
     <string name="quick_unlock_summary">Dismiss lockscreen after PIN/Password entry</string>
 
+    <string name="charge_info_title">Charge info</string>
+    <string name="charge_info_summary">Show detailed charge information</string>
+
 </resources>

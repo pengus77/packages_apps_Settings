@@ -57,6 +57,12 @@
         android:defaultValue="false" />
 
     <SwitchPreference
+        android:key="charge_info"
+        android:title="@string/charge_info_title"
+        android:summary="@string/charge_info_summary"
+        android:defaultValue="true" />
+
+    <SwitchPreference
         android:key="security_setting_lockdown_enabled"
         android:title="@string/lockdown_settings_title"
         android:summary="@string/lockdown_settings_summary"
