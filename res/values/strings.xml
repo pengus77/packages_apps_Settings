@@ -10090,4 +10090,8 @@
 
     <string name="face_auto_unlock_title">Auto face unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlock</string>
+
+    <string name="quick_unlock_title">Quick unlock</string>
+    <string name="quick_unlock_summary">Dismiss lockscreen after PIN/Password entry</string>
+
 </resources>

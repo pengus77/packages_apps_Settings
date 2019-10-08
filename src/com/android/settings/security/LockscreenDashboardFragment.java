@@ -92,6 +92,7 @@ public class LockscreenDashboardFragment extends DashboardFragment
                 new OwnerInfoPreferenceController(context, this, lifecycle);
         controllers.add(mOwnerInfoPreferenceController);
         controllers.add(new LockdownButtonPreferenceController(context));
+        controllers.add(new QuickUnlockPreferenceController(context));
 
         return controllers;
     }
