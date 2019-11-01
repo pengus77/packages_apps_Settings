@@ -68,4 +68,9 @@
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
 
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Skip music tracks</string>
+    <string name="volume_skiptrack_title">Volume rocker skip tracks</string>
+    <string name="volume_skiptrack_summary">Long press the volume rocker to skip tracks when playing music, even remotely on tv or PC with e.g. Spotify (app must run on the phone and show the notification).</string>
+
 </resources>
