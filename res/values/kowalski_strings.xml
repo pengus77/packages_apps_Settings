@@ -48,4 +48,7 @@
     <string name="doubletap_lockscreen_title">Double tap to sleep on lockscreen</string>
     <string name="doubletap_lockscreen_summary">Double tap on lockscreen empty areas to switch the screen off</string>
 
+    <!-- Volume keys inversion when rotated -->
+    <string name="swap_volume_keys_on_rotation_title">Swap volume buttons when rotating the device</string>
+
 </resources>
