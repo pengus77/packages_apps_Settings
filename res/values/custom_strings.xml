@@ -31,6 +31,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
 
     <!-- ROM version -->
+    <string name="about_device_name">Device</string>
     <string name="build_date">Build date</string>
     <string name="rom_version">CesiumOS version</string>
     <string name="rom_version_default">Unknown</string>
