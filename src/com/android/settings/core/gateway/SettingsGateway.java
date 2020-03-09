@@ -292,7 +292,7 @@ public class SettingsGateway {
             Blissify.class.getName(),
             GamingMode.class.getName(),
             RunningServices.class.getName(),
-            DarkModeSettingsFragment.class.getName(),
+            DarkModeSettingsFragment.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
