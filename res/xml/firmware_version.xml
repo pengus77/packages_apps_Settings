@@ -21,12 +21,6 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- CesiumOS logo -->
-    <PreferenceScreen
-        android:key="cesium_logo"
-        android:enabled="false"
-        android:layout="@layout/cesium_logo" />
-
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"

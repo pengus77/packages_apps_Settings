@@ -32,10 +32,9 @@ import com.android.settings.core.BasePreferenceController;
 
 public class RomVersionDetailPreferenceController extends BasePreferenceController {
 
-    private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/CesiumOS_News");
     private static final String TAG = "romDialogCtrl";
-    private static final String KEY_ROM_VERSION_PROP = "org.cesium.build_version";
-    private static final String KEY_ROM_RELEASETYPE_PROP = "org.cesium.build_type";
+    private static final String KEY_ROM_VERSION_PROP = "org.kowalski.build_version";
+    private static final String KEY_ROM_RELEASETYPE_PROP = "org.kowalski.build_type";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
     public RomVersionDetailPreferenceController(Context context, String preferenceKey) {
@@ -58,17 +57,6 @@ public class RomVersionDetailPreferenceController extends BasePreferenceControll
     }
 
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (!TextUtils.equals(preference.getKey(), getPreferenceKey())) {
-            return false;
-        }
-        Intent intent = new Intent();
-        intent.setAction("android.intent.action.VIEW");
-        intent.setData(INTENT_URI_DATA);
-        if (this.mPackageManager.queryIntentActivities(intent, 0).isEmpty()) {
-            Log.w(TAG, "queryIntentActivities() returns empty");
-            return true;
-        }
-        this.mContext.startActivity(intent);
-        return true;
+        return false;
     }
 }
