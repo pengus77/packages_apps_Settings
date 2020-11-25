@@ -47,6 +47,7 @@
         android:fragment="com.android.settings.notification.BubbleNotificationSettings"
     />
 
+
     <PreferenceCategory
         android:key="recent_notifications_category"
         android:title="@string/recent_notifications"
@@ -66,7 +67,6 @@
                 android:value="com.android.settings.Settings$NotificationAppListActivity"/>
         </Preference>
     </PreferenceCategory>
-
 
     <PreferenceCategory
         android:key="configure_notifications_lock"
@@ -104,6 +104,12 @@
         android:key="configure_notifications_advanced"
         android:order="15"
         settings:initialExpandedChildrenCount="8">
+
+        <SwitchPreference
+            android:key="notification_headers"
+            android:title="@string/notification_headers_title"
+            android:summary="@string/notification_headers_summary"
+            settings:controller="com.android.settings.notification.HeadersPreferenceController"/>
 
         <SwitchPreference
             android:key="silent_icons"
