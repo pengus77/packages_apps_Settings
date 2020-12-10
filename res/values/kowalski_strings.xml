@@ -30,6 +30,8 @@
 
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+    <string name="ring_volume_unlinked_option_title">Ring volume</string>
+    <string name="notification_volume_option_title">Notification volume</string>
 
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
