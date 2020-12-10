@@ -135,6 +135,9 @@ public class SettingsSliceProvider extends SliceProvider {
 
     private static final KeyValueListParser KEY_VALUE_LIST_PARSER = new KeyValueListParser(',');
 
+    private static final String KEY_VOLUME_RING = "ring_volume";
+    private static final String KEY_VOLUME_LINK_NOTIFICATION = "volume_link_notification";
+
     @VisibleForTesting
     SlicesDatabaseAccessor mSlicesDatabaseAccessor;
 
@@ -401,6 +404,12 @@ public class SettingsSliceProvider extends SliceProvider {
             } else {
                 registerIntentToUri(filter, uri);
             }
+        }
+
+        if (Settings.Secure.getInt(getContext().getContentResolver(), KEY_VOLUME_LINK_NOTIFICATION, 1) == 0 
+                && KEY_VOLUME_RING.equals(controller.getPreferenceKey())) {
+            String title = getContext().getResources().getString(R.string.ring_volume_unlinked_option_title);
+            sliceData.setTitle(title);
         }
 
         ThreadUtils.postOnMainThread(() -> startBackgroundWorker(controller, uri));

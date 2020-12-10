@@ -22,6 +22,7 @@ import static com.android.settings.slices.CustomSliceRegistry.VOLUME_ALARM_URI;
 import static com.android.settings.slices.CustomSliceRegistry.VOLUME_CALL_URI;
 import static com.android.settings.slices.CustomSliceRegistry.VOLUME_MEDIA_URI;
 import static com.android.settings.slices.CustomSliceRegistry.VOLUME_RINGER_URI;
+import static com.android.settings.slices.CustomSliceRegistry.VOLUME_NOTIFICATIONS_URI;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -36,6 +37,7 @@ import java.util.List;
 
 public class VolumePanel implements PanelContent {
 
+    private static final String KEY_VOLUME_LINK_NOTIFICATION = "volume_link_notification";
     private final Context mContext;
 
     public static VolumePanel create(Context context) {
@@ -54,12 +56,17 @@ public class VolumePanel implements PanelContent {
     @Override
     public List<Uri> getSlices() {
         final List<Uri> uris = new ArrayList<>();
+        boolean unlinked = Settings.Secure.getInt(mContext.getContentResolver(),
+                KEY_VOLUME_LINK_NOTIFICATION, 1) == 0;
 
         uris.add(REMOTE_MEDIA_SLICE_URI);
         uris.add(VOLUME_MEDIA_URI);
         uris.add(MEDIA_OUTPUT_INDICATOR_SLICE_URI);
         uris.add(VOLUME_CALL_URI);
         uris.add(VOLUME_RINGER_URI);
+        if (unlinked) {
+            uris.add(VOLUME_NOTIFICATIONS_URI);
+        }
         uris.add(VOLUME_ALARM_URI);
         return uris;
     }

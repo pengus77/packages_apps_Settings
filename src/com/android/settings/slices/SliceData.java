@@ -52,7 +52,7 @@ public class SliceData {
 
     private final String mKey;
 
-    private final String mTitle;
+    private String mTitle;
 
     private final String mSummary;
 
@@ -81,6 +81,10 @@ public class SliceData {
 
     public String getTitle() {
         return mTitle;
+    }
+
+    public void setTitle(String title) {
+        mTitle = title;
     }
 
     public String getSummary() {
