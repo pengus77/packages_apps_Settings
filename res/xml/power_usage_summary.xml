@@ -51,6 +51,11 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
+    <SwitchPreference
+        android:key="battery_icon"
+        android:title="@string/battery_icon"
+        android:summary="@string/battery_icon_description"
+        settings:controller="com.android.settings.display.BatteryIconPreferenceController" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"

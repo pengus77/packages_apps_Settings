@@ -51,4 +51,8 @@
     <!-- Volume keys inversion when rotated -->
     <string name="swap_volume_keys_on_rotation_title">Swap volume buttons when rotating the device</string>
 
+    <!-- Battery Icon -->
+    <string name="battery_icon">Battery icon</string>
+    <string name="battery_icon_description">Show battery icon in status bar</string>
+
 </resources>
