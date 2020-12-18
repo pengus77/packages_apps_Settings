@@ -55,6 +55,7 @@
         android:key="battery_icon"
         android:title="@string/battery_icon"
         android:summary="@string/battery_icon_description"
+        android:defaultValue="true"
         settings:controller="com.android.settings.display.BatteryIconPreferenceController" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
