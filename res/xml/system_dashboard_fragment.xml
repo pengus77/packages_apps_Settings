@@ -48,6 +48,7 @@
     <Preference
         android:key="qs_settings"
         android:title="@string/qs_settings_title"
+        android:icon="@drawable/ic_qs_tile"
         android:order="-230"
         android:fragment="com.android.settings.kowalski.qs.QSFragment"/>
 
