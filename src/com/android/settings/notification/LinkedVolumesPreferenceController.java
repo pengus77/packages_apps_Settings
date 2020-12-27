@@ -25,13 +25,15 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
-import com.android.settings.Utils;
 import com.android.settingslib.core.AbstractPreferenceController;
+
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.notification.VolumeSeekBarPreference;
 import com.android.settings.R;
+import com.android.settings.Utils;
 
 public class LinkedVolumesPreferenceController extends AbstractPreferenceController
-        implements Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String KEY_VOLUME_LINK_NOTIFICATION = "volume_link_notification";
     private static final String KEY_VOLUME_RING = "ring_volume";
