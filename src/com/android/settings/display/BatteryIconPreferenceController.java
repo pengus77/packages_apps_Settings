@@ -46,7 +46,7 @@ public class BatteryIconPreferenceController extends BasePreferenceController im
     @Override
     public void updateState(Preference preference) {
         int setting = Settings.System.getInt(mContext.getContentResolver(),
-                SHOW_BATTERY_ICON, 0);
+                SHOW_BATTERY_ICON, 1);
 
         ((SwitchPreference) preference).setChecked(setting == 1);
     }
