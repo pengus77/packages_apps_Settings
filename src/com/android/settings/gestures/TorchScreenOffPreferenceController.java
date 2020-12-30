@@ -16,18 +16,18 @@
 
 package com.android.settings.gestures;
 
-import static android.provider.Settings.System.VOLUME_BUTTON_MUSIC_CONTROL;
+import static android.provider.Settings.System.TORCH_LONG_PRESS_POWER_GESTURE;
+import static android.provider.Settings.System.TORCH_LONG_PRESS_POWER_TIMEOUT;
 
 import android.content.Context;
 import android.provider.Settings;
 
-public class VolumeSkipTrackPreferenceController extends GesturePreferenceController {
+public class TorchScreenOffPreferenceController extends GesturePreferenceController {
 
-    private final String SYSTEM_KEY = VOLUME_BUTTON_MUSIC_CONTROL;
     static final int ON = 1;
     static final int OFF = 0;
 
-    public VolumeSkipTrackPreferenceController(Context context, String key) {
+    public TorchScreenOffPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -44,13 +44,13 @@ public class VolumeSkipTrackPreferenceController extends GesturePreferenceContro
     @Override
     public boolean isChecked() {
         final int enabled = Settings.System.getInt(mContext.getContentResolver(),
-                SYSTEM_KEY, OFF);
+                TORCH_LONG_PRESS_POWER_GESTURE, OFF);
         return enabled == ON;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        return Settings.System.putInt(mContext.getContentResolver(), SYSTEM_KEY,
+        return Settings.System.putInt(mContext.getContentResolver(), TORCH_LONG_PRESS_POWER_GESTURE,
                 isChecked ? ON : OFF);
     }
 }

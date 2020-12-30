@@ -73,4 +73,15 @@
     <string name="volume_skiptrack_title">Volume rocker skip tracks</string>
     <string name="volume_skiptrack_summary">Long press the volume rocker to skip tracks when playing music, even remotely on tv or PC with e.g. Spotify (app must run on the phone and show the notification).</string>
 
+    <!-- Torch long press power gesture -->
+    <string name="torch_long_press_power_gesture_title">Long press power button for torch</string>
+    <string name="torch_long_press_power_gesture_summary">Toggles torch when power button is long pressed while display is off</string>
+
+    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
+    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_timeout_1min">1 minute</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutes</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutes</string>
+
 </resources>

@@ -98,4 +98,11 @@
         android:title="@string/volume_skiptrack_screen_title"
         android:fragment="com.android.settings.gestures.VolumeSkipTrackSettings"
         settings:controller="com.android.settings.gestures.VolumeSkipTrackPreferenceController" />
+
+    <Preference
+        android:key="gesture_torch_screen_off_summary"
+        android:title="@string/torch_long_press_power_gesture_title"
+        android:fragment="com.android.settings.gestures.TorchScreenOffSettings" 
+        settings:controller="com.android.settings.gestures.TorchScreenOffPreferenceController" />
+
 </PreferenceScreen>
