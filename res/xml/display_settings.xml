@@ -159,4 +159,9 @@
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
+    <com.kowalski.support.preferences.SecureSettingSwitchPreference
+        android:key="navbar_inverse_layout"
+        android:title="@string/navbar_invert_layout_title"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
